@@ -5,16 +5,5 @@ function helloWorld() {
 
 // sayHello function
 function sayHello(input) {
-    // return "A random string";
-    // return "";
-
-    if(input === "Alex"){
-        return "Hello Alex";
-    }else if(input === "Jane"){
-        return "Hello Jane";
-    }else if(input === "Pat"){
-        return "Hello Pat"
-    }
-    return "";
-
+return `Hello ${input}`;
 }

@@ -4,8 +4,14 @@ function helloWorld() {
 }
 
 // sayHello function
-function sayHello() {
+function sayHello(input) {
     // return "A random string";
     // return "";
-    return "Hello Jane";
+    if(input === "Alex"){
+        return "Hello Alex";
+    }else if(input === "Jane"){
+        return "Hello Jane";
+    }
+
+
 }

@@ -6,5 +6,6 @@ function helloWorld() {
 // sayHello function
 function sayHello() {
     // return "A random string";
-    return "";
+    // return "";
+    return "Hello Jane";
 }

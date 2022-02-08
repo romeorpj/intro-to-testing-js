@@ -26,10 +26,12 @@ describe("sayHello", () => {
     // it("should return a 'A random string' when called", ()=>  {
     //     expect(sayHello()).toBe("A random string")
     // });
-    it("should return a short string", () => {
-        expect(typeof sayHello()).toBe("string");
-    })
-
+    // it("should return a short string", () => {
+    //     expect(typeof sayHello()).toBe("string");
+    // })
+it("should return 'Hello Jane'",()=>{
+    expect(sayHello()).toBe("Hello Jane");
+})
 })
 
 

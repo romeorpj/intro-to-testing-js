@@ -20,20 +20,17 @@ describe("sayHello", () => {
     it("should be a defined function", () => {
         expect(typeof sayHello).toBe("function");
     });
-    // it("should return a string when called", () => {
-    //     expect(typeof sayHello()).toBe('string')
-    // });
-    // it("should return a 'A random string' when called", ()=>  {
-    //     expect(sayHello()).toBe("A random string")
-    // });
-    // it("should return a short string", () => {
-    //     expect(typeof sayHello()).toBe("string");
-    // })
+    it("should return a string when called", () => {
+        expect(typeof sayHello("")).toBe('string')
+    });
 it("Should return 'Hello Jane",()=>{
     expect(sayHello("Jane")).toBe("Hello Jane")
 })
     it("Should return 'Hello Alex",()=>{
         expect(sayHello("Alex")).toBe("Hello Alex")
+    })
+    it("Should return 'Hello, Pat",()=>{
+        expect(sayHello("Pat")).toBe("Hello Pat")
     })
 })
 

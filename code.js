@@ -1,12 +1,5 @@
 function isEven(input3) {
-    if (input3 % 2 === 0) {
-        return true;
-    }
-    else if (input3 % 2 !== 0) {
-        return false;
-    } else if(typeof input3 === "boolean") {
-        return false;
-    }
+    return input3 % 2 === 0 && typeof input3 !== "boolean";
 }
 
 

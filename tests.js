@@ -99,4 +99,7 @@ describe("isEven",()=>{
     it("should return false if input3 is boolean false",()=>{
         expect(isEven(false)).toBe(false)
     })
+    it("Should return false when called without an argument like isEven()",()=>{
+        expect(isEven()).toBe(false)
+    })
 })

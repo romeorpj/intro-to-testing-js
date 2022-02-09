@@ -32,6 +32,27 @@ it("Should return 'Hello Jane",()=>{
     it("Should return 'Hello, Pat",()=>{
         expect(sayHello("Pat")).toBe("Hello Pat")
     })
+    it("Should return 'Hello World'", ()=>{
+        expect(sayHello("World")).toBe("Hello World")
+    })
+    it("Should return boolean true", ()=>{
+        expect(sayHello(true)).toBe(("Hello World"))
+    })
+    it('should return boolean false', ()=> {
+expect(sayHello(false)).toBe("Hello World")
+    });
+    it(`should return empty input is not allowed`, () =>{
+        expect(sayHello(null)).toBe("empty input is not allowed")
+    });
+    it(`Should return empty input is not allowed`,()=>{
+        expect(sayHello("")).toBe("empty input is not allowed")
+    })
+    it("Should return a number or a float",()=>{
+        expect(sayHello(5.5)).toBe(`${5.5} is a number`)
+    })
+    // it("Should return true if string is a number",()=>{
+    //     expect(sayHello("6")).toBe(true)
+    // })
 })
 
 

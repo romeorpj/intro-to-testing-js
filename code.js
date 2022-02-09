@@ -5,5 +5,16 @@ function helloWorld() {
 
 // sayHello function
 function sayHello(input) {
-return `Hello ${input}`;
+    if(input === true || input === false){
+        return "Hello World";
+    }else if(input === null || input === ""){
+        return "empty input is not allowed"
+
+    }else if(typeof input === "number"){
+        return `${input} is a number`
+    }
+    else{
+        return `Hello ${input}`;
+    }
+
 }

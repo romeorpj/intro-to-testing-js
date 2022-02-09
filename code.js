@@ -1,4 +1,14 @@
-// helloWorld function 
+function isFive(input2){
+    if(input2 === 5 || parseInt(input2) === 5){
+        return true;
+    }else{
+        return Boolean(input2);
+    }
+
+
+}
+
+// helloWorld function
 function helloWorld() {
     return "Hello, World!";
 }

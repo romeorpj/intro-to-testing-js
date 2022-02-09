@@ -71,3 +71,32 @@ describe("isFive", () => {
     })
 })
 
+describe("isEven",()=>{
+    it("Should be a type of function",()=>{
+        expect(typeof isEven).toBe("function")
+    })
+    it("should return true if input3 is the number 2",()=>{
+        expect(isEven(2)).toBe(true)
+    })
+    it("should return true if input3 is the number -4",()=>{
+        expect(isEven(-4)).toBe(true)
+    })
+    it("should return false if input3 is the number 3",()=>{
+        expect(isEven(3)).toBe(false)
+    })
+    it("should return false if input3 is the string banana",()=>{
+        expect(isEven("banana")).toBe(false)
+    })
+    it("should return true if input3 is the string 8",()=>{
+        expect(isEven("8")).toBe(true)
+    })
+    it("should return false if input3 is the Infinity",()=>{
+        expect(isEven(Infinity)).toBe(false)
+    })
+    it("should return false if input3 is boolean true",()=>{
+        expect(isEven(true)).toBe(false)
+    })
+    it("should return false if input3 is boolean false",()=>{
+        expect(isEven(false)).toBe(false)
+    })
+})
